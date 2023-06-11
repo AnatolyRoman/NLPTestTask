@@ -254,6 +254,11 @@ def display_model_characteristics():
     - Вычисляются метрики precision, recall, F1-мера и MCC (Matthews correlation coefficient) на проверочном наборе данных.
 
     Метрики:
+    Accuracy: 0.6537257357545397
+    Precision: 0.7065511046221734
+    Recall: 0.6711886191258413
+    F1 score: 0.6353329842608849
+    MCC: 0.6071668366944123
 
     """
     with st.expander("Описание модели"):
