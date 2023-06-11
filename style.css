@@ -1,0 +1,8 @@
+body {
+    background-color: black;
+    }
+
+body {
+    background-image: url('path/to/smiley-silhouettes.png');
+    background-repeat: repeat;
+    }
