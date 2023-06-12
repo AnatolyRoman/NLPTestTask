@@ -310,7 +310,7 @@ st.plotly_chart(fig2)
 sentence = st.text_input("Введите предложение:")
 if sentence:
     predicted_emotion = predict_emotion(sentence)
-    st.write("Predicted Emotion (First Model):", emotion)
+    st.write("Predicted Emotion (First Model):", predicted_emotion)
 
 # Model description for the second model
 st.markdown('''
