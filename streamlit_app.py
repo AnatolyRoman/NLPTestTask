@@ -15,6 +15,10 @@ import pickle
 import torch
 import keras
 
+
+# Стилизация приложения
+st.markdown(f"""<style>{open("styles.css").read()}</style>""", unsafe_allow_html=True)
+
 # Путь к файлу модели
 model_path = "FirrstModel/emotion_model.h5"
 
