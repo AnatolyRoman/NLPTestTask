@@ -16,20 +16,6 @@ import torch
 import keras
 
 
-# Проверка наличия файла
-if st._is_running_with_streamlit:
-    import os
-
-    file_path = os.path.join(os.path.dirname(__file__), "styles.css")
-
-    if os.path.isfile(file_path):
-        with open(file_path) as f:
-            styles = f.read()
-
-        # Применение стилей с помощью markdown
-        st.markdown(f"<style>{styles}</style>", unsafe_allow_html=True)
-    else:
-        st.write("Файл styles.css не найден.")
 
 # Путь к файлу модели
 model_path = "FirrstModel/emotion_model.h5"
