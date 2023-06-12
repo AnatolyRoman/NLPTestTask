@@ -30,7 +30,7 @@ st.set_page_config(page_title="NLP: Test Task", page_icon=":smiley:", layout="wi
 
 # Header
 st.markdown('''
-    <h1 style="text-align: left; color: #FFC300 ; font-size: 100px;">NLP engineer</h1>
+    <h1 style="text-align: left; color: #FFC300 ; font-size: 90px;">NLP engineer</h1>
     <hr style="border-top: 5px solid #A09D0E   ; margin-top: 30px; margin-bottom: 30px;">
     <h1 style="text-align: left; color: #FFC300; font-size: 70px;">Test Task</h1>
 ''', unsafe_allow_html=True)
