@@ -16,8 +16,12 @@ import torch
 import keras
 
 
-# Стилизация приложения
-st.markdown(f"""<style>{open("styles.css").read()}</style>""", unsafe_allow_html=True)
+# Чтение содержимого файла styles.css
+with open("styles.css") as f:
+    styles = f.read()
+
+# Применение стилей с помощью markdown
+st.markdown(f"<style>{styles}</style>", unsafe_allow_html=True)
 
 # Путь к файлу модели
 model_path = "FirrstModel/emotion_model.h5"
