@@ -105,18 +105,19 @@ st.markdown('''
 
 
 # Загрузка данных из файла CSV
-# Визуализация частоты слов
-fig = px.treemap(FreqOfWords_top200, path=[FreqOfWords_top200.index], values=0)
+train_df = pd.read_csv('train_data.csv')
 
+# Визуализация частоты слов
+fig = px.treemap(FreqOfWords_top200, path=[FreqOfWords_top200.index], values='count')
 fig.update_traces(textinfo="label+value")
 
 # Вставка в Streamlit
 st.plotly_chart(fig)
 
-
 st.markdown('''
     <h1 style="text-align: left; color: #FF69B4; font-size: 25px;">Распределение меток классов в обучающем наборе данных</h1>
 ''', unsafe_allow_html=True)
+
 
 st.markdown('''
     <p style="text-align: left; color: #D8D8D8; font-size: 20px;">
